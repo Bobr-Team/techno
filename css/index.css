@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.upheader{
+    padding-top: 37px;
+    padding-bottom: 37px;
+    background-image: url("/img/back.png");
+}
+.cont{
+    width: 1363px;
+    margin: 0 auto;
+}
+.upheader .cont{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.upheader .wrapper__header{
+    display: flex;
+    align-items: center;
+}
+.upheader .wrapper__header img{
+    margin-right: 17px;
+}
+.upheader .cont .wrapper__header p, .upheader .cont .wrapper__header a{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+.upheader .cont .wrapper__left{
+    display: flex;
+}
+.upheader .cont .wrapper__left .wrapper__header{
+    margin-right: 55px;
+}
+header nav .cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    margin-right: 42px;
+}
+header nav ul li a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+header nav ul li:last-child{
+    margin-right: 0;
+}
+h2{
+    font-size: 24px;
+    font-weight: 600;
+    border-left: 5px solid rgb(254, 196, 0);
+    padding-left: 15px;
+}
+h2 span{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.46);
+}
+/* step */
+#step{
+    padding-top: 37px;
+    padding-bottom: 37px;
+    background-color: rgb(247, 247, 247);
+}
+.all_steps{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper__step{
+    margin-top: 45px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    width: 600px;
+    background: rgb(255, 255, 255);
+    box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.05);
+}
+.wrapper__step .number_step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    width: 42px;
+    height: 42px;
+    background: rgb(254, 196, 0);
+}
+.wrapper__step p{
+    margin-top: 23px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.wrapper__step p span{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}
