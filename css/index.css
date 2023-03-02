@@ -175,6 +175,10 @@ h2 span{
     top: 15px;
     right: 15px;
 }
+
+
+/* footer */
+
 .footer_block {
     display: flex;
     background-image: url("../img/back.png");
@@ -189,6 +193,8 @@ h2 span{
     padding-left: 15px;
 }
 .footer_left {
+    align-items: center;
+    width: 617px;
     display: flex;
     justify-content: space-between;
 }
@@ -227,4 +233,6 @@ h2 span{
  .footer_block .cont{
     display: flex;
     justify-content: space-between;
+    padding-top: 43px;
+    padding-bottom: 12px;
  }
