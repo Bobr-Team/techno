@@ -180,9 +180,10 @@ h2 span{
 /* footer */
 
 .footer_block {
-    display: flex;
     background-image: url("../img/back.png");
     color: #FFFFFF;
+    padding-top: 43px;
+    padding-bottom: 15px;
 }
 .footer_call{
     border-left: 5px solid rgb(254, 196, 0);
@@ -233,6 +234,44 @@ h2 span{
  .footer_block .cont{
     display: flex;
     justify-content: space-between;
-    padding-top: 43px;
-    padding-bottom: 12px;
+    
  }
+
+/* banner_header */
+.banner__header{
+    position: relative;
+}
+.into__banner{
+    position: absolute;
+    top:129px;
+    left: 208px;
+}
+.into__banner p{
+    font-size: 30px;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    box-shadow: 9px 9px 0px rgba(254, 196, 0, 0.68);
+    padding: 28px 55px 38px 37px;
+    border-left: 15px solid rgb(254, 196, 0);
+}
+.into__banner p span{
+    font-size: 24px;
+    font-weight: 400;
+}
+.into__banner a{
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 180px;
+    height: 42px;
+    background: rgb(254, 196, 0);
+    text-decoration: none;
+    color:#000;
+}
+.cop{
+    margin-top: 30px;
+    text-align: center;
+}
