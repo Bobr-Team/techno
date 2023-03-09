@@ -77,6 +77,9 @@ h2 span{
     font-weight: 400;
     color: rgba(0, 0, 0, 0.46);
 }
+button {
+    cursor: pointer;
+}
 /* step */
 #step{
     padding-top: 37px;
@@ -431,6 +434,7 @@ table {
     width: 100%;
     padding: 15px 0;
     display: block;
+    
 }
 td {
     padding: 5px;
