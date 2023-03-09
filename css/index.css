@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+.gam, .lnr {
+    display: none;
+}
 .upheader{
     padding-top: 37px;
     padding-bottom: 37px;
@@ -115,15 +118,61 @@ h2 span{
     color: rgba(0, 0, 0, 0.8);
 }
 
-/* сыпучие материалы и аренда */
-#material {
-    padding-top: 37px;
+.content {
+    position: relative;
+    margin: 0;
+    margin-left: auto;
+    width: fit-content;
 }
-#material h2{
+.content .banner {
+    display: block;
+}
+#about .into__banner {
+    position: absolute;
+    top: 40px;
+    left: 208px;
+    width: 650px;
+}
+#about .into__banner p {
+    padding: 20px 55px 20px 37px;
+}
+.info {
+    position: absolute;
+    bottom: 51px;
+    left: 671px;
+    width: 600px;
+}
+.info .fst, .info .snd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info .fst {
+    margin-bottom: 57px;
+}
+.elem {
+    display: flex;
+}
+.elem p {
+    color: #fff;
+    margin-left: 17px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.elem p span {
+    font-weight: 400;
+}
+
+/* сыпучие материалы и аренда */
+#material, #tecn {
+    padding: 37px 0;
+}
+#material h2, #tecn h2{
     width: 700px;
 }
 .blocktovar {
     width: 400px;
+    margin: 0 auto;
 }
 .blocktovar img {
     display: block;
@@ -218,6 +267,10 @@ h2 span{
     display: none; /*flex*/
     justify-content: center;
     align-items: center;
+    z-index: 2;
+}
+.enable {
+    display: flex;
 }
 .wind_cts {
     position: relative;
@@ -369,4 +422,246 @@ h2 span{
 .cop{
     margin-top: 30px;
     text-align: center;
+}
+td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 15px 0;
+    display: block;
+}
+td {
+    padding: 5px;
+    word-break: break-all;
+}
+td:first-child {
+    width: 30%;
+}
+
+@media screen and (max-width: 1643px) {
+    .banner__header img, .content, .content .banner {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1443px) {
+    .cont {
+        width: 90%;
+    }
+    .vsetovari {
+        gap: 2.32vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .into__banner {
+        top: 40px;
+    }
+    #about .into__banner {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+    .info {
+        position: static;
+        margin: 0 auto;
+    }
+    .content .banner {
+        display: none;
+    }
+    #about {
+        background-image: url("../img/banner2.png");
+        padding: 30px 0;
+    }
+    .all_steps {
+        flex-direction: column;
+    }
+    .wrapper__step {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .upheader .cont .wrapper__left .wrapper__header.wrap_address {
+        display: none;
+    }
+    #about {
+        background-image: url("../img/back.png");
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .vsetovari {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #material h2, #tecn h2 {
+        width: auto;
+    }
+    .banner__header {
+        background-image: url("../img/banner.png");
+        padding: 30px 0;
+    }
+    .banner__header img {
+        display: none;
+    }
+    .into__banner {
+        position: static;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .into__banner a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about .into__banner p {
+        width: 400px;
+        margin: 0 auto;
+    }
+    #about .into__banner {
+        width: auto;
+    }
+    .footer_call {
+        display: none;
+    }
+    .footer_left {
+        width: 100%;
+    }
+    .upheader .cont, .footer_block .cont, .footer_left {
+        flex-direction: column;
+        order: 2;
+    }
+    .footer_right ul li {
+        text-align: center;
+    }
+    .footer_right {
+        margin: 0 auto;
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .fst, .snd {
+        flex-direction: column;
+    }
+    .snd .elem:last-child {
+        margin-bottom: 0;
+    }
+    .info .fst {
+        margin-bottom: 0;
+    }
+    .info {
+        width: 100%;
+    }
+    .elem {
+        width: 240px;
+        margin-bottom: 20px;
+    }
+    .elem img {
+        width: 52px;
+    }
+    .upheader .cont .wrapper__left .wrapper__header {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+    .gam, .lnr {
+        display: block;
+    }
+    .gam {
+        position: fixed;
+        top: -4000px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.35s ease;
+        z-index: 3;
+    }
+    
+    .gam .krest {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .gam nav {
+        text-align: center;
+    }
+    
+    .gam li {
+        margin-bottom: 20px;
+        list-style-type: none;
+    }
+    
+    .gam li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: uppercase;
+    }
+    .line_gam {
+        border-top: 1px solid #00adb5;
+        padding-top: 15px;
+    }
+    
+    .contact_gam {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p, span, li, a, button {
+        font-size: 16px !important; 
+    }
+    h3 {
+        font-size: 18px !important; 
+    }
+    h2 {
+        font-size: 20px; 
+    }
+    .elem img {
+        width: 40px;
+    }
+    .upheader, header nav .cont, .banner__header, #material, #tecn, #about, #step, .footer_block {
+        padding: 10px 0;
+    }
+    .upheader .cont .wrapper__left .wrapper__header {
+        margin-bottom: 10px;
+    }
+    .wrapper__step {
+        margin-top: 10px;
+    }
+    .blocktovar {
+        width: 290px;
+    }
+    .blocktovar img {
+        width: 100%;
+    }
+    .blockspec {
+        margin-top: 0;
+        width: 100%;
+    }
+    .blockspec h3, .blockspec p, .blockspec ul {
+        padding-left: 15px;
+    }
+    .blockspec button {
+        margin-left: 15px;
+    }
+    .banner__header {
+        display: none;
+    }
+    #about .into__banner p {
+        width: 290px;
+    }
 }
